@@ -10,11 +10,36 @@
   "dependencies": {
     "@babel/plugin-transform-react-jsx": "^7.17.3",
     "@babel/plugin-transform-runtime": "^7.17.0",
+    "@material-ui/core": "4.11.2",
+    "@tweenjs/tween.js": "17.2.0",
     "@vue/babel-helper-vue-jsx-merge-props": "^1.2.1",
     "@vue/babel-preset-jsx": "^1.2.4",
+    "acorn": "8.0.4",
+    "axios": "^0.26.1",
+    "babel-loader": "^8.2.4",
     "core-js": "^3.6.5",
+    "css-loader": "^3.5.3",
+    "fastintcompression": "0.0.2",
+    "hull.js": "0.2.10",
+    "jquery": "3.5.1",
+    "less-loader": "^5.0.0",
+    "lineclip": "1.1.5",
+    "mdi-material-ui": "6.21.0",
+    "mousetrap": "1.6.2",
+    "paper": "0.11.8",
+    "point-in-polygon-extended": "0.0.1",
+    "polybooljs": "1.2.0",
+    "postal": "2.0.5",
+    "rc-slider": "8.6.1",
     "react": "^16.14.0",
     "react-dom": "^16.14.0",
+    "sass": "^1.32.12",
+    "sass-loader": "^10.0.0",
+    "style-loader": "^2.0.0",
+    "three": "0.112.1",
+    "three-orbitcontrols": "^2.110.3",
+    "tippy.js": "2.5.2",
+    "underscore": "1.9.1",
     "vue": "^2.6.11",
     "vuera": "^0.2.7"
   },
@@ -40,7 +65,8 @@
       "parser": "babel-eslint"
     },
     "rules": {
-      "no-unused-vars": "off"
+      "no-unused-vars": "off",
+      "no-useless-escape": "off"
     }
   },
   "browserslist": [

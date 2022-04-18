@@ -1,6 +1,5 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
     <SseEditorApp/>
   </div>
 
@@ -8,8 +7,7 @@
 
 <script>
 // import HelloWorld from './components/HelloWorld.vue'
-import SseEditorApp from './components/sseEditorApp.jsx'
-
+import SseEditorApp from '../reactImports/editor/SseEditorApp.jsx'
 
 
 export default {
