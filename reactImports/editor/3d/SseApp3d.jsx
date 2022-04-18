@@ -103,7 +103,7 @@ export default class SseApp3d extends React.Component {
                                         </div>
                                         <SseCameraToolbar/>
                                     </div>
-                                    {/* <SseObjectToolbar/> */}
+                                    <SseObjectToolbar/>
                                 </div>
                             </div>
                             <SseBottomBar allTags={this.state.allTags}/>
