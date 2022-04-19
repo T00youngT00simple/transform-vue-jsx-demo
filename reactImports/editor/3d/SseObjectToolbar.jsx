@@ -26,21 +26,6 @@ class SseObjectButton extends React.Component {
         SseMsg.unregister(this);
     }
 
-    positionIndicator(backgroundColor = "#56FE45") {
-        const w = 15;
-        const h = 15;
-
-        const indicatorStyle = {
-            width: w + 'px',
-            height: h + 'px',
-            backgroundColor: backgroundColor
-        };
-        return (<div
-            style={indicatorStyle}
-            className="position-indicator">
-        </div>)
-    }
-
     onClick() {
         this.sendMsg("object-select", {value: this.props.object});
     }
@@ -58,8 +43,14 @@ class SseObjectButton extends React.Component {
         return (<div className={"object-button" + (this.state.selected ? " selected" : "")}>
             <button onClick={() => this.onClick()}>
                 <div className="hflex flex-align-items-center">
-                    {this.positionIndicator(color)}
-
+                    <div
+                        style={{
+                            width: "15px",
+                            height: "15px",
+                            backgroundColor: "#56FE45"
+                        }}
+                        className="position-indicator">
+                    </div>
                     <span>{label}</span>
                 </div>
             </button>

@@ -10,13 +10,9 @@ import SseSetOfClasses from "../../common/SseSetOfClasses";
 import SseTheme from "../../common/SseTheme";
 import SseCameraToolbar from "./SseCameraToolbar";
 import SseEditor3d from "./SseEditor3d";
-// import SseObjectToolbar from "./SseObjectToolbar";
+import SseObjectToolbar from "./SseObjectToolbar";
 import SseToolbar3d from "./SseToolbar3d";
 import { getImageInfoDetail, getTagList, getSample, getClassesSets } from "../../../api/segmentation.js"
-
-import "./styles/layout.css"
-import "./styles/main.scss"
-import "./styles/tippy.css"
 
 export default class SseApp3d extends React.Component {
 
@@ -103,7 +99,7 @@ export default class SseApp3d extends React.Component {
                                         </div>
                                         <SseCameraToolbar/>
                                     </div>
-                                    {/* <SseObjectToolbar/> */}
+                                    <SseObjectToolbar/>
                                 </div>
                             </div>
                             <SseBottomBar allTags={this.state.allTags}/>
